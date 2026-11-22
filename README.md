@@ -1,14 +1,11 @@
 # Codon Usage Pipeline
 
-A reproducible workflow for analysing **codon usage bias in viral coding sequences**, developed
-during my undergraduate thesis. It combines Python utilities for sequence retrieval, quality
-filtering, output parsing and figure generation with a documented protocol for established external
-tools (CodonW, CAIcal, tAI, SPSS).
+A reproducible workflow for analysing **codon usage bias in viral coding sequences**, developed during an undergraduate thesis. It combines Python utilities for sequence retrieval, quality filtering, output parsing and figure generation with a documented protocol for established external tools (CodonW, CAIcal, tAI, SPSS).
 
 You can run the whole workflow, or just the parts you need - each step takes plain files in and
 writes plain files out.
 
-> **Status:** research code, originally a Google Colab notebook, now organised as a Python package
+> This pipeline was originally developed as a Google Colab notebook, now organised as a Python package
 > with a command-line interface. External-tool steps remain manual and are documented in
 > [`docs/workflow.md`](docs/workflow.md).
 
