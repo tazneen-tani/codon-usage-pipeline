@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codon-usage-pipeline"
+version = "0.1.0"
+description = "Codon usage analysis pipeline for viral coding sequences (preprocessing, CodonW parsing, codon pair scores, figures)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Tazneen Hossain Tani" }]
+dependencies = [
+    "biopython>=1.80",
+    "pandas>=1.5",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "openpyxl",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+codon-usage = "codon_usage.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

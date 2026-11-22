@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Notebooks / OS / editors
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+
+# Pipeline outputs (keep inputs/templates small and explicit)
+results/
+data/*
+!data/README.md
+*.out
+*.bulk
+*.coa
